@@ -1,6 +1,24 @@
+@keyframes show{
+  from {opacity:0%};
+  to {opacity:100%};
+}
+
+@keyframes bgc{
+  0% {background-color:aliceblue};
+  50% {background-color: black};
+  100% {background-color:aliceblue};
+}
+
 body {
-  color: navy;
-  margin:2%;
+  color: black;
+  margin:1.5%;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size:1.4vw;
+  background: aliceblue;
+  padding:2%;
+  border: 0.5vw dotted;
+  line-height: 140%;
+  animation: bgc 2s infinite;
 }
 
 h1 {
@@ -9,17 +27,24 @@ h1 {
 
 .quote {
   color: royalblue;
+  font-size:1.8vw;
+  line-height: 1.6;
+  background-color: black;
+  animation: bgc 2s infinite;
 }
 
 .quote.narrator {
   color: black;
+  
 }
 
 #intro p {
   color: blue;
+  width:55%;
+  animation: show 0.75s infinite;
 }
 
 .super-important-omg {
-  font-size: 20px;
-  background-color: yellow;
+  font-size: 2vw;
+  background-color: aqua;
 }
